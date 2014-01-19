@@ -4,5 +4,6 @@
     <string name="app_name">Ploigos</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-
+    <string name = "metaioSDKSignature">aMQPOr7gOiGyyQUKd9Lx2uFNuOb0b5n2jjsF83J7KsY=</string>
+    
 </resources>
