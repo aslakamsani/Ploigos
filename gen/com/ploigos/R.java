@@ -9,22 +9,78 @@ package com.ploigos;
 
 public final class R {
     public static final class attr {
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>standard</code></td><td>0</td><td></td></tr>
+<tr><td><code>grow</code></td><td>1</td><td></td></tr>
+<tr><td><code>cards</code></td><td>2</td><td></td></tr>
+<tr><td><code>curl</code></td><td>3</td><td></td></tr>
+<tr><td><code>wave</code></td><td>4</td><td></td></tr>
+<tr><td><code>flip</code></td><td>5</td><td></td></tr>
+<tr><td><code>fly</code></td><td>6</td><td></td></tr>
+<tr><td><code>reverse_fly</code></td><td>7</td><td></td></tr>
+<tr><td><code>helix</code></td><td>8</td><td></td></tr>
+<tr><td><code>fan</code></td><td>9</td><td></td></tr>
+<tr><td><code>tilt</code></td><td>10</td><td></td></tr>
+<tr><td><code>zipper</code></td><td>11</td><td></td></tr>
+<tr><td><code>fade</code></td><td>12</td><td></td></tr>
+<tr><td><code>twirl</code></td><td>13</td><td></td></tr>
+<tr><td><code>slide_in</code></td><td>14</td><td></td></tr>
+</table>
+         */
+        public static final int effect=0x7f010000;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int max_velocity=0x7f010004;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int only_animate_fling=0x7f010002;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int only_animate_new_items=0x7f010001;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int simulate_grid_with_list=0x7f010003;
     }
     public static final class color {
-        public static final int listViewBackground=0x7f050002;
-        public static final int listViewText=0x7f050001;
-        public static final int logoBlue=0x7f05000b;
-        public static final int logoGreen=0x7f05000a;
-        public static final int logoOrange=0x7f050009;
-        public static final int logoYellow=0x7f050008;
-        public static final int poiDetailBackground=0x7f05000d;
-        public static final int screenTitle=0x7f050007;
-        public static final int sponsoredBackground=0x7f05000c;
-        public static final int tableViewBackground=0x7f050003;
-        public static final int toastBackground=0x7f050004;
-        public static final int toastBorder=0x7f050005;
-        public static final int toastText=0x7f050006;
-        public static final int transparent=0x7f050000;
+        public static final int listViewBackground=0x7f060002;
+        public static final int listViewText=0x7f060001;
+        public static final int logoBlue=0x7f06000b;
+        public static final int logoGreen=0x7f06000a;
+        public static final int logoOrange=0x7f060009;
+        public static final int logoYellow=0x7f060008;
+        public static final int poiDetailBackground=0x7f06000d;
+        public static final int screenTitle=0x7f060007;
+        public static final int sponsoredBackground=0x7f06000c;
+        public static final int tableViewBackground=0x7f060003;
+        public static final int toastBackground=0x7f060004;
+        public static final int toastBorder=0x7f060005;
+        public static final int toastText=0x7f060006;
+        public static final int transparent=0x7f060000;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -88,64 +144,95 @@ public final class R {
         public static final int poi_background_ad=0x7f020030;
         public static final int radar_inner=0x7f020031;
         public static final int rating_drawable=0x7f020032;
-        public static final int star_act=0x7f020033;
-        public static final int star_dis=0x7f020034;
-        public static final int toastbackground=0x7f020035;
-        public static final int web_back_default=0x7f020036;
-        public static final int web_back_pressed=0x7f020037;
-        public static final int web_close_default=0x7f020038;
-        public static final int web_close_pressed=0x7f020039;
-        public static final int web_forward_default=0x7f02003a;
-        public static final int web_forward_pressed=0x7f02003b;
-        public static final int web_reload_default=0x7f02003c;
-        public static final int web_reload_pressed=0x7f02003d;
-        public static final int web_stop_default=0x7f02003e;
-        public static final int web_stop_pressed=0x7f02003f;
+        public static final int sparrow=0x7f020033;
+        public static final int sparrow2=0x7f020034;
+        public static final int sparrowmain=0x7f020035;
+        public static final int sparrowwhite=0x7f020036;
+        public static final int star_act=0x7f020037;
+        public static final int star_dis=0x7f020038;
+        public static final int toastbackground=0x7f020039;
+        public static final int web_back_default=0x7f02003a;
+        public static final int web_back_pressed=0x7f02003b;
+        public static final int web_close_default=0x7f02003c;
+        public static final int web_close_pressed=0x7f02003d;
+        public static final int web_forward_default=0x7f02003e;
+        public static final int web_forward_pressed=0x7f02003f;
+        public static final int web_reload_default=0x7f020040;
+        public static final int web_reload_pressed=0x7f020041;
+        public static final int web_stop_default=0x7f020042;
+        public static final int web_stop_pressed=0x7f020043;
     }
     public static final class id {
-        public static final int actionButtonContainer=0x7f060013;
-        public static final int action_settings=0x7f060020;
-        public static final int audioButton=0x7f060002;
-        public static final int buttonClose=0x7f060007;
-        public static final int buttonShare=0x7f06001b;
-        public static final int buttonWebBack=0x7f06001c;
-        public static final int buttonWebForward=0x7f06001f;
-        public static final int buttonWebReload=0x7f06001e;
-        public static final int buttonWebStop=0x7f06001d;
-        public static final int callButton=0x7f060005;
-        public static final int details=0x7f060014;
-        public static final int emailButton=0x7f060006;
-        public static final int homePageButton=0x7f060000;
-        public static final int html5viewcontainer=0x7f060008;
-        public static final int imageAttribution=0x7f06000b;
-        public static final int imageButton=0x7f060001;
-        public static final int imagePOIThumbnail=0x7f06000a;
-        public static final int imagePointer=0x7f06000d;
-        public static final int layoutRotated=0x7f060009;
-        public static final int layoutToast=0x7f060015;
-        public static final int progressBar=0x7f060018;
-        public static final int ratingbar=0x7f06000f;
-        public static final int root=0x7f060019;
-        public static final int routeButton=0x7f060004;
-        public static final int scrollButtonContainer=0x7f060012;
-        public static final int scrollContainer=0x7f060010;
-        public static final int textPOIDescription=0x7f060011;
-        public static final int textPOILocation=0x7f06000e;
-        public static final int textPOIName=0x7f06000c;
-        public static final int textToast=0x7f060016;
-        public static final int videoButton=0x7f060003;
-        public static final int webBottomBar=0x7f06001a;
-        public static final int webView=0x7f060017;
+        public static final int actionButtonContainer=0x7f050029;
+        public static final int action_settings=0x7f050037;
+        public static final int audioButton=0x7f050011;
+        public static final int b1=0x7f050016;
+        public static final int b2=0x7f050017;
+        public static final int b3=0x7f050018;
+        public static final int buttonClose=0x7f05001d;
+        public static final int buttonShare=0x7f050032;
+        public static final int buttonWebBack=0x7f050033;
+        public static final int buttonWebForward=0x7f050036;
+        public static final int buttonWebReload=0x7f050035;
+        public static final int buttonWebStop=0x7f050034;
+        public static final int callButton=0x7f050014;
+        public static final int cards=0x7f050002;
+        public static final int confirm=0x7f05001c;
+        public static final int curl=0x7f050003;
+        public static final int details=0x7f05002a;
+        public static final int emailButton=0x7f050015;
+        public static final int fade=0x7f05000c;
+        public static final int fan=0x7f050009;
+        public static final int flip=0x7f050005;
+        public static final int fly=0x7f050006;
+        public static final int grow=0x7f050001;
+        public static final int helix=0x7f050008;
+        public static final int homePageButton=0x7f05000f;
+        public static final int html5viewcontainer=0x7f05001e;
+        public static final int imageAttribution=0x7f050021;
+        public static final int imageButton=0x7f050010;
+        public static final int imagePOIThumbnail=0x7f050020;
+        public static final int imagePointer=0x7f050023;
+        public static final int imageView1=0x7f050019;
+        public static final int input=0x7f05001a;
+        public static final int input2=0x7f05001b;
+        public static final int layoutRotated=0x7f05001f;
+        public static final int layoutToast=0x7f05002c;
+        public static final int progressBar=0x7f05002f;
+        public static final int ratingbar=0x7f050025;
+        public static final int reverse_fly=0x7f050007;
+        public static final int root=0x7f050030;
+        public static final int routeButton=0x7f050013;
+        public static final int rowContent=0x7f05002b;
+        public static final int scrollButtonContainer=0x7f050028;
+        public static final int scrollContainer=0x7f050026;
+        public static final int slide_in=0x7f05000e;
+        public static final int standard=0x7f050000;
+        public static final int textPOIDescription=0x7f050027;
+        public static final int textPOILocation=0x7f050024;
+        public static final int textPOIName=0x7f050022;
+        public static final int textToast=0x7f05002d;
+        public static final int tilt=0x7f05000a;
+        public static final int twirl=0x7f05000d;
+        public static final int videoButton=0x7f050012;
+        public static final int wave=0x7f050004;
+        public static final int webBottomBar=0x7f050031;
+        public static final int webView=0x7f05002e;
+        public static final int zipper=0x7f05000b;
     }
     public static final class layout {
         public static final int activity_ar=0x7f030000;
-        public static final int activity_main=0x7f030001;
-        public static final int button_action_detail=0x7f030002;
-        public static final int html5container=0x7f030003;
-        public static final int poidetaildialog=0x7f030004;
-        public static final int toast=0x7f030005;
-        public static final int webview=0x7f030006;
-        public static final int webviewnav=0x7f030007;
+        public static final int activity_list=0x7f030001;
+        public static final int activity_main=0x7f030002;
+        public static final int button_action_detail=0x7f030003;
+        public static final int customdialog=0x7f030004;
+        public static final int dialog=0x7f030005;
+        public static final int html5container=0x7f030006;
+        public static final int poidetaildialog=0x7f030007;
+        public static final int row=0x7f030008;
+        public static final int toast=0x7f030009;
+        public static final int webview=0x7f03000a;
+        public static final int webviewnav=0x7f03000b;
     }
     public static final class menu {
         public static final int main=0x7f0a0000;
@@ -990,8 +1077,119 @@ public final class R {
         public static final int POIButton=0x7f080002;
         public static final int POIButton_POIActionButton=0x7f080003;
         public static final int POIButton_POICloseButton=0x7f080004;
-        public static final int Theme_FullScreen=0x7f080007;
+        public static final int Theme_FullScreen=0x7f080008;
         public static final int Theme_Fullscreen=0x7f080000;
         public static final int Theme_POIDialog=0x7f080001;
+        public static final int myBackgroundStyle=0x7f080007;
     }
+    public static final class styleable {
+        /** Attributes that can be used with a JazzyListView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #JazzyListView_effect com.ploigos:effect}</code></td><td></td></tr>
+           <tr><td><code>{@link #JazzyListView_max_velocity com.ploigos:max_velocity}</code></td><td></td></tr>
+           <tr><td><code>{@link #JazzyListView_only_animate_fling com.ploigos:only_animate_fling}</code></td><td></td></tr>
+           <tr><td><code>{@link #JazzyListView_only_animate_new_items com.ploigos:only_animate_new_items}</code></td><td></td></tr>
+           <tr><td><code>{@link #JazzyListView_simulate_grid_with_list com.ploigos:simulate_grid_with_list}</code></td><td></td></tr>
+           </table>
+           @see #JazzyListView_effect
+           @see #JazzyListView_max_velocity
+           @see #JazzyListView_only_animate_fling
+           @see #JazzyListView_only_animate_new_items
+           @see #JazzyListView_simulate_grid_with_list
+         */
+        public static final int[] JazzyListView = {
+            0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003,
+            0x7f010004
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.ploigos.R.attr#effect}
+          attribute's value can be found in the {@link #JazzyListView} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>standard</code></td><td>0</td><td></td></tr>
+<tr><td><code>grow</code></td><td>1</td><td></td></tr>
+<tr><td><code>cards</code></td><td>2</td><td></td></tr>
+<tr><td><code>curl</code></td><td>3</td><td></td></tr>
+<tr><td><code>wave</code></td><td>4</td><td></td></tr>
+<tr><td><code>flip</code></td><td>5</td><td></td></tr>
+<tr><td><code>fly</code></td><td>6</td><td></td></tr>
+<tr><td><code>reverse_fly</code></td><td>7</td><td></td></tr>
+<tr><td><code>helix</code></td><td>8</td><td></td></tr>
+<tr><td><code>fan</code></td><td>9</td><td></td></tr>
+<tr><td><code>tilt</code></td><td>10</td><td></td></tr>
+<tr><td><code>zipper</code></td><td>11</td><td></td></tr>
+<tr><td><code>fade</code></td><td>12</td><td></td></tr>
+<tr><td><code>twirl</code></td><td>13</td><td></td></tr>
+<tr><td><code>slide_in</code></td><td>14</td><td></td></tr>
+</table>
+          @attr name com.ploigos:effect
+        */
+        public static final int JazzyListView_effect = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.ploigos.R.attr#max_velocity}
+          attribute's value can be found in the {@link #JazzyListView} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.ploigos:max_velocity
+        */
+        public static final int JazzyListView_max_velocity = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.ploigos.R.attr#only_animate_fling}
+          attribute's value can be found in the {@link #JazzyListView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.ploigos:only_animate_fling
+        */
+        public static final int JazzyListView_only_animate_fling = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.ploigos.R.attr#only_animate_new_items}
+          attribute's value can be found in the {@link #JazzyListView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.ploigos:only_animate_new_items
+        */
+        public static final int JazzyListView_only_animate_new_items = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.ploigos.R.attr#simulate_grid_with_list}
+          attribute's value can be found in the {@link #JazzyListView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.ploigos:simulate_grid_with_list
+        */
+        public static final int JazzyListView_simulate_grid_with_list = 3;
+    };
 }

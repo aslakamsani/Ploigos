@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Title" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/input2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Address" >
+    </EditText>
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@id/input"
+        android:layout_alignRight="@id/input"
+        android:layout_below="@id/input2"
+        android:layout_marginTop="10dp"
+        android:background="#f1a09e"
+        android:text="Complete"
+        android:textColor="#ffffff"
+        android:textSize="14sp" >
+    </Button>
+
+</RelativeLayout>
